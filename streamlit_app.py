@@ -11,7 +11,7 @@ st.set_page_config(
 # ✅ Load the real classifier
 @st.cache_resource
 def load_model():
-    with open("/Users/vivian_l/git/polygence_project/models_art_classifier.pkl", "rb") as file:
+    with open("models_art_classifier.pkl", "rb") as file:
         loaded_data = pickle.load(file)
 
     model_config = loaded_data["config"]
